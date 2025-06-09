@@ -13,10 +13,11 @@ class View(ft.UserControl):
         self._controller = None
         # graphical elements
         self._title = None
-        self.txt_name = None
-        self.btn_hello = None
+        self.ddAnni = None
+        self.ddBrand = None
+        self.btn_topVendite = None
+        self.btn_analizzaVendite = None
         self.txt_result = None
-        self.txt_container = None
 
     def load_interface(self):
         # title
@@ -27,7 +28,8 @@ class View(ft.UserControl):
         self.ddAnni = ft.Dropdown(label="anno", width=200)
         self._controller.fillddAnno()
 
-        self.ddBrand = ft.Dropdown(label="brand", width=200)
+        self.ddBrand = ft.Dropdown(label="brand",
+                                   width=200)
         self._controller.fillddBrand()
 
         self.ddRetailer = ft.Dropdown(label="retailer", width=200)
